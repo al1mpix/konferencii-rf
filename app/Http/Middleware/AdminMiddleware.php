@@ -10,7 +10,7 @@ class AdminMiddleware
 {
     public function handle(Request $request, Closure $next): Response
     {
-        if (!$request->session()->boolean('is_admin')) {
+        if (!$request->session()->get('is_admin', false)) {
             return redirect()->route('login')
                 ->with('error', 'Для доступа к панели войдите как администратор.');
         }
