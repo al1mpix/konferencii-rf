@@ -1,2 +1,0 @@
-document.querySelectorAll('form').forEach(form=>form.addEventListener('submit',()=>{const b=form.querySelector('button[type="submit"]');if(b){b.dataset.oldText=b.textContent.trim();b.style.opacity='.8';}}));
-document.querySelectorAll('input[name="phone"]').forEach(input=>input.addEventListener('input',()=>{input.setCustomValidity(input.value && !/^8\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(input.value)?'Формат: 8(XXX)XXX-XX-XX':'' )}));
