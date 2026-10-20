@@ -23,12 +23,9 @@ class Booking extends Model
         'review',
     ];
 
-    protected function casts(): array
-    {
-        return [
-            'event_date' => 'date',
-        ];
-    }
+    protected $casts = [
+        'event_date' => 'date',
+    ];
 
     public function user(): BelongsTo
     {
