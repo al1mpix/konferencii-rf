@@ -5,7 +5,7 @@
 
 Учебное веб-приложение для бронирования помещений для конференций.
 
-**Стек:** PHP 8.2+, Laravel 12, MySQL, Blade, HTML, CSS.  
+**Стек:** PHP 8.1+, Laravel 10, MySQL, Blade, HTML, CSS.  
 **Макет Figma:** https://www.figma.com/design/hk7zuPMx31Y5Anm9ebYxoV
 
 ## Возможности
@@ -29,7 +29,7 @@
 
 ## Установка и запуск
 
-Нужны PHP 8.2+, Composer, MySQL и расширение PHP pdo_mysql.
+Нужны PHP 8.1+, Composer, MySQL и расширение PHP pdo_mysql.
 
 1. Создайте в MySQL базу данных с именем konferencii_rf, кодировка utf8mb4.
 2. Скопируйте .env.example в .env.
